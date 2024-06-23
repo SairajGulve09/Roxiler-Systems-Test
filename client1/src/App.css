@@ -1,38 +1,181 @@
+/* App.css */
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Container for main content */
 .App {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
   text-align: center;
+  color: #ff4d4d;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Search bar container */
+.search-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search input */
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 400px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Search button */
+.search-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Statistics and chart section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px; /* Reduced margin for better spacing */
+}
+
+.chart-container {
+  width: 60%;
+  height: 400px;
+  margin-right: 20px; /* Added right margin for spacing */
+}
+
+.statistics-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  background-color: #4fa2fa;
+  color: antiquewhite;
+  width: 35%; /* Adjusted width for better layout */
+}
+
+.statistics-box h2 {
+  margin-top: 0;
+}
+
+
+/* Month selection */
+.month {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Added margin bottom for spacing */
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination li a:hover {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4fa2fa;
+  color: #fff;
+}
+
+
+footer{
+  background-color: rgba(0, 0, 0, 0.323);
+  color: white;
+  font-weight: 600;
+  
+}
+
+.base{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.subBase{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: center; 
 }
