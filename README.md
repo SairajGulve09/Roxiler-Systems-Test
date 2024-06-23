@@ -74,3 +74,10 @@ npm start
 # From the root directory of the project
 cd client
 npm start
+
+
+# Images:
+
+![Screenshot 2024-06-23 125431](https://github.com/SairajGulve09/Roxiler-Systems-Test/assets/130494632/6111aef1-b48e-4594-9906-ec7c84635a59)
+![Screenshot 2024-06-23 125404](https://github.com/SairajGulve09/Roxiler-Systems-Test/assets/130494632/8b1e0e86-928c-4a98-836e-16c5925218ff)
+![Screenshot 2024-06-23 125352](https://github.com/SairajGulve09/Roxiler-Systems-Test/assets/130494632/5b87be78-730e-4ae2-99b1-b41c8d75b7c3)
